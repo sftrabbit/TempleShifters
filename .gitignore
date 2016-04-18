@@ -1,0 +1,4 @@
+/build
+/audio/*.aup
+/audio/*_data
+/node_modules
