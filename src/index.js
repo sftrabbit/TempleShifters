@@ -4,7 +4,3 @@ const game = new window.Phaser.Game(300, 220, Phaser.AUTO, 'game') // eslint-dis
 
 game.state.add('boot', new BootState())
 game.state.start('boot')
-
-export function foo() {
-  console.log('foo')
-}

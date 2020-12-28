@@ -346,8 +346,6 @@ export default class LevelState {
 
   createImage (game, key, imageData) {
     const base64image = `data:image/jpeg;base64,${imageData}`
-    const image = new Image()
-    image.src = base64image
-    game.cache.addImage(key, base64image, image)
+    game.load.image(key, base64image)
   }
 }

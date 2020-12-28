@@ -44,7 +44,7 @@ function build_ (b) {
     .pipe(buffer())
     .pipe(gulp.dest('build'))
 
-  const assetsStream = gulp.src(['src/index.html', 'node_modules/phaser/dist/phaser.min.js'])
+  const assetsStream = gulp.src(['src/index.html', 'node_modules/phaser/build/phaser.min.js'])
     .pipe(gulp.dest('build'))
 
   return merge(bundleStream, assetsStream)

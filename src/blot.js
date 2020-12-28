@@ -52,7 +52,6 @@ export default class Blot {
     tween.onComplete.add(() => {
       if (!this.kneeling) {
         this.draw(0)
-        console.log('foo')
       }
       callback()
     })
